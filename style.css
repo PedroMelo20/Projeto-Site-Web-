@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #EFE3CA;
+}
+
+
+.header_conteiner{
+    background: linear-gradient(#56B6C6, #8ACBD0);
+    font-size: medium;
+}
+
+.nav_conteiner ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 30px;
+    border-bottom: 5px solid black;
+}
+
+.nav_conteiner a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 35px;
+}
+
+/*main*/
+
+.main_animes,
+.main_filmes,
+.main_series{
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.main_animes ol,
+.main_series ol,
+.main_filmes ol {
+    text-align: left;
+    display: inline-block; /* necessário para o text-align: left funcionar com margin: 0 auto */
+}
+
+.footer{
+    border-top: solid 5px black;
+    color: #126b71;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
