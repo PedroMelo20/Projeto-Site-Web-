@@ -7,12 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #EFE3CA;
+    background-color: #F0F0F0;
+    color: #0D0D0D;
 }
 
 
 .header_conteiner{
-    background: linear-gradient(#56B6C6, #8ACBD0);
+    background: linear-gradient(#1A1A2E, #363674);
     font-size: medium;
 }
 
@@ -30,7 +31,17 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 35px;
+    padding: 10px;
+    display: inline-block; /* adiciona essa linha */
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease, transform 0.5s ease;
+}
+
+.nav_conteiner a:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    color: #7B2FBE;
+    border-bottom: 3px solid #7B2FBE; /* linha aparece no hover */
 }
 
 /*main*/
@@ -43,6 +54,9 @@ body {
     font-size: large;
 }
 
+.main img{
+    padding: 20px;
+}
 
 .main{
     max-width: 900px;
@@ -60,7 +74,8 @@ body {
 
 .footer{
     border-top: solid 5px black;
-    color: #126b71;
+    background: linear-gradient(#1A1A2E, #363674);
+    color: #EFE3CA;
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
