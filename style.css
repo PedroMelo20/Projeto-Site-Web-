@@ -74,8 +74,8 @@ body {
 
 .footer{
     border-top: solid 5px black;
-    background: linear-gradient(#1A1A2E, #363674);
-    color: #EFE3CA;
+    background-color: #1A1A2E;
+    color: #f0f0f0;
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
