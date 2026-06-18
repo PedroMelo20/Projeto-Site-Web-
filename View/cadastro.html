@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekDevZone</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="cadastro-body">
+    <header class="header_conteiner">
+      <!--Nunca esquecer o header-->
+      <nav class="nav_conteiner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!--No nav sempre colocar o link-->
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="#">Créditos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="titulo"><h1 style="color: white">Meu Formulário</h1></div>
+    <form action="cadastro.php" method="POST">
+      <fieldset class="formulario">
+        <legend class="legenda-form">Prenche os Dados</legend>
+        <div class="form-dados">
+          <label for="inome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            placeholder="Nome"
+            required
+          /><br />
+
+          <label for="isobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="isobrenome"
+            placeholder="Sobrenome"
+          /><br />
+
+          <label for="iusuario" type="text">Usuário: </label>
+          <input
+            type="text"
+            name="usuario"
+            id="iusuario"
+            placeholder="Usuário"
+          /><br />
+
+          <label for="iemail" type="text">E-mail: </label>
+          <input
+            type="text"
+            name="email"
+            id="iemail"
+            placeholder="e-mail@e-mail.com"
+            pattern="[a-z0-9]+@[a-z0-9]+\.[a-z0-9]{2,}"
+            required
+          /><br />
+
+          <label for="isenha">Senha: </label>
+          <input
+            type="password"
+            name="senha"
+            id="isenha"
+            placeholder="******"
+            required
+            minlength="8"
+            maxlength="13"/><br/>
+        </div>
+
+        <div class="form-genero">
+          <label for="imasculino">
+            <input type="radio" name="genero" id="imasculino" />Masculino
+          </label>
+          <label for="ifeminino">
+            <input type="radio" name="genero" id="ifeminino" />Feminino
+          </label>
+          <label for="inaobinario">
+            <input type="radio" name="genero" id="inaobinario" />Não Binário
+          </label>
+          <label for="ioutro">
+            <input type="radio" name="genero" id="ioutro" />Outro
+          </label>
+        </div>
+        <br/>
+
+        <div class="form-btn">
+          <input type="submit" class="form-button" value="Enviar" />
+          <input type="reset" class="form-button" value="Limpar" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
