@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* BODY */
@@ -68,8 +71,9 @@ body {
 }
 
 .main img {
-  width: 100%;
   padding: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 .main_animes ol,
@@ -83,9 +87,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 12px;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 
 .main_animes h2,
 .main_series h2,
