@@ -135,7 +135,8 @@ body {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   align-self: center;
-  width: 450px;
+  width: 800px;
+  min-width: 280px;
   height: 610px;
   padding-left: 150px;
   background-color: #d4bee4;
@@ -158,7 +159,7 @@ form input:required:invalid:not(:placeholder-shown) {
 }
 
 .form-dados input {
-  height: 20px;
+  height: 30px;
   width: 70%;
   display: block;
   margin: 0;
