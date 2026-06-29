@@ -1,154 +1,159 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* BODY */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #D4BEE4;
-    color: #0D0D0D;
-}
-
-/*Body do cadastro*/
-.cadastro-body{
-
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #d4bee4;
+  color: #0d0d0d;
 }
 
 /*nav*/
-.header_conteiner{
-    background: linear-gradient(#15173D, #982598);
-    font-size: medium;
+.header_conteiner {
+  background: linear-gradient(#15173d, #982598);
+  font-size: medium;
 }
 
-.nav_conteiner ul{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    list-style: none;
-    padding: 15px 30px;
-    border-bottom: 5px solid black;
+.nav_conteiner ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 30px;
+  border-bottom: 5px solid black;
 }
 
 .nav_conteiner a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    display: inline-block;
-    border-bottom: 3px solid transparent;
-    transition: border-color 0.3s ease, transform 0.5s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition:
+    border-color 0.3s ease,
+    transform 0.5s ease;
 }
 
-.nav_conteiner a:hover{
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-    color: #982598;
-    border-bottom: 3px solid #982598; /*Para a linha aparece no hover */
+.nav_conteiner a:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  color: #982598;
+  border-bottom: 3px solid #982598; /*Para a linha aparece no hover */
 }
 
 /*main*/
 
+.main {
+  max-width: 950px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
 .main_animes,
 .main_filmes,
-.main_series{
-    padding: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
+.main_series {
+  padding: 20px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: large;
 }
 
-.main img{
-    padding: 20px;
-}
-
-.main{
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+.main img {
+  width: 100%;
+  padding: 20px;
 }
 
 .main_animes ol,
 .main_series ol,
 .main_filmes ol {
-    text-align: left;
-    display: inline-block;
+  text-align: left;
+  display: inline-block;
 }
 
-.sections_container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.sections_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 
 .main_animes h2,
 .main_series h2,
 .main_filmes h2 {
-    font-family: 'Orbitron';
-    padding: 1rem;
+  font-family: "Orbitron";
+  padding: 1rem;
 }
 
 .main_animes,
 .main_filmes,
-.main_series{
-    border: 5px solid #15173D;
-    border-radius: 6px;
+.main_series {
+  border: 5px solid #15173d;
+  border-radius: 6px;
 }
 
 /*Footer*/
-.footer{
-    border-top: solid 5px #15173D;
-    background: linear-gradient(#982598, #15173D);
-    color: #D4BEE4;
-    max-width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
+.footer {
+  border-top: solid 5px #15173d;
+  background: linear-gradient(#982598, #15173d);
+  color: #d4bee4;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /*Formulário Cadastro*/
-.titulo{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.titulo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-self: center;
 }
 
-.legenda-form{
-  background-color: #D4BEE4;
+.legenda-form {
+  background-color: #d4bee4;
   border-top: 6px #982598 solid;
   border-left: 6px #982598 solid;
   border-right: 6px #982598 solid;
+  justify-self: center;
 }
 
-.formulario{
+.formulario {
+  justify-self: center;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   align-self: center;
-  width: 400px;
-  height: 500px;
+  width: 450px;
+  height: 610px;
   padding-left: 150px;
-  background-color: #D4BEE4;
+  background-color: #d4bee4;
   border: 6px #982598 solid;
   border-radius: 12px;
 }
 
-form input{
-  border-color: #D4BEE4;
+form input {
+  border-color: #d4bee4;
 }
 
-form input:required:valid:not(:placeholder-shown){
+form input:required:valid:not(:placeholder-shown) {
   background: #ffffff;
-  border-color: #005F02;
+  border-color: #005f02;
 }
 
-form input:required:invalid:not(:placeholder-shown){
+form input:required:invalid:not(:placeholder-shown) {
   background: #ffffff;
-  border-color: #FF0000;
+  border-color: #ff0000;
 }
 
-.form-dados input{
+.form-dados input {
   height: 20px;
   width: 70%;
   display: block;
@@ -156,35 +161,35 @@ form input:required:invalid:not(:placeholder-shown){
   padding: 5px;
   border: 1px solid;
   border-radius: 6px;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4); 
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
-.form-dados{
+.form-dados {
   display: flex;
   flex-direction: column;
 }
 
-.form-genero{
+.form-genero {
   display: flex;
   flex-direction: column;
 }
 
-.form-button{
+.form-button {
   width: 90px;
   height: 30px;
   border-radius: 8px;
   background-color: #ffffff;
   border-color: #982598;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
-  color: #15173D;
+  color: #15173d;
   font-size: 15px;
   font-weight: bold;
 }
 
-.form-button:hover{
+.form-button:hover {
   transition: 1s;
   transform: scale(1.3);
-  background-color: #15173D;
+  background-color: #15173d;
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
