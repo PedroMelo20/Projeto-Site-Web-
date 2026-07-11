@@ -15,12 +15,12 @@ body {
 }
 
 /*nav*/
-.header_conteiner {
+.header_container {
   background: linear-gradient(#15173d, #982598);
   font-size: medium;
 }
 
-.nav_conteiner ul {
+.nav_container ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -30,19 +30,19 @@ body {
   border-bottom: 5px solid black;
 }
 
-.nav_conteiner a {
-  color: white;
+.nav_container a {
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
   display: inline-block;
   border-bottom: 3px solid transparent;
   transition:
-    border-color 0.3s ease,
-    transform 0.5s ease;
+  border-color 0.3s ease,
+  transform 0.5s ease;
 }
 
-.nav_conteiner a:hover {
+.nav_container a:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease;
   color: #982598;
@@ -120,13 +120,12 @@ body {
 .titulo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   justify-self: center;
+  font-size: medium;
 }
 
 .legenda-form {
-  background-color: #d4bee4;
-  border-top: 6px #982598 solid;
-  border-left: 6px #982598 solid;
-  border-right: 6px #982598 solid;
+  background-color: #ffffff;
+  border-radius: 8px;
   justify-self: center;
 }
 
@@ -135,10 +134,9 @@ body {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   align-self: center;
-  width: 800px;
-  min-width: 280px;
-  height: 610px;
-  padding-left: 150px;
+  width: min(760px, 80%);
+  height: auto;
+  padding: 30px;
   background-color: #d4bee4;
   border: 6px #982598 solid;
   border-radius: 12px;
@@ -160,10 +158,9 @@ form input:required:invalid:not(:placeholder-shown) {
 
 .form-dados input {
   height: 30px;
-  width: 70%;
+  width: min(70%);
   display: block;
   margin: 0;
-  padding: 5px;
   border: 1px solid;
   border-radius: 6px;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);

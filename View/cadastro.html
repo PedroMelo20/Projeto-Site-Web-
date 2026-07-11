@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="cadastro-body">
-    <header class="header_conteiner">
+    <header class="header_container">
       <!--Nunca esquecer o header-->
-      <nav class="nav_conteiner">
+      <nav class="nav_container">
         <ul>
           <li><a href="index.html">Home</a></li>
           <!--No nav sempre colocar o link-->
@@ -20,7 +20,7 @@
       </nav>
     </header>
     
-    <div class="titulo"><h1 style="color: white">Meu Formulário</h1></div>
+    <div class="titulo"><h1>Meu Formulário</h1></div>
     <form action="cadastro.php" method="POST">
       <fieldset class="formulario">
         <legend class="legenda-form">Prenche os Dados</legend>
@@ -71,19 +71,14 @@
             maxlength="13"/><br/>
         </div>
 
-        <div class="form-genero">
-          <label for="imasculino">
-            <input type="radio" name="genero" id="imasculino" />Masculino
-          </label>
-          <label for="ifeminino">
-            <input type="radio" name="genero" id="ifeminino" />Feminino
-          </label>
-          <label for="inaobinario">
-            <input type="radio" name="genero" id="inaobinario" />Não Binário
-          </label>
-          <label for="ioutro">
-            <input type="radio" name="genero" id="ioutro" />Outro
-          </label>
+        <div class="form-check form-check-inline">
+          <select name="genero" id="igenero">
+            <option value="homem">Homem</option>
+            <option value="mulher">Mulehr</option>
+            <option value="nao-binario">Não binário</option>
+            <option value="outro">Outro</option>
+            <option value="prefiro-nao-informar">Prefiro não Informar</option>
+          </select>
         </div>
         <br/>
 
